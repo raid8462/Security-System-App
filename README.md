@@ -34,7 +34,33 @@ Under the virtual tab select Create device => Select a phone when 'Select Hardwa
 
 Once the virtual device has been installed from the toolbar select the device from the dropdown list and select the run button, shaped as a play button.
 
-<img width="549" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/8718fe9f-de76-46bd-9756-48e16213a4fc">
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/8718fe9f-de76-46bd-9756-48e16213a4fc">
 
 ## Using the system
+
+When the application is run the Login screen is displayed. If not registered to an account click the 'Sign Up now' button to navigate to the Sign Up page.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/1456b8b7-996e-4b96-8263-be9c98b36002">
+
+From the Sign Up page enter a valid email and password. The password uses a strength checker to check for a secure password. The following conditions are required for a valid password:
+- Minimum 8 characters
+- At lease one uppercase character
+- At least one number
+- At least one special character
+
+The Sign Up page also uses a Captcha, prompting users to slide the missing piece of an image to authenticate. If a valid email and password is entered and the captcha is verified the sign up button is enabled.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/891584ed-c3ad-4612-8f5a-18454ab816c1">
+
+Once the user clicks Sign Up they are taken to the Verify Email page where an email is sent to the user to verify their email. When the user clicks on the verification link the user is navigated to the OTT page.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/fa4f4366-6044-41bf-85b2-2144768d0462">
+
+When navigated to the OTT page the user is prompted to enter the token sent to their email and click the 'Verify' button. If the token is not valid an error message is displayed. If the token is valid they are navigated to the Home page. The OTT email  can be sent again by clicking on the 'Resend OTT' button.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/c553b377-d5af-4e9e-9add-d7385754f6b7">
+
+The Home page is displayed to the user, with their email address and button to sign out of the application.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/f15c8a1e-2dab-4f25-adff-2b6bf17146bd">
 

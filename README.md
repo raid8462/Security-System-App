@@ -1,6 +1,4 @@
-# security_system
-
-A new Flutter project.
+# Security System App
 
 ## Getting Started
 

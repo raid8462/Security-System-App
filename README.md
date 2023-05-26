@@ -10,7 +10,7 @@ Install Android Studio to be able to use the application on an Android emulator.
 
 https://github.com/raid8462/Security-System-App/assets/73480311/bd45a761-113d-47f8-b3e2-c00848f1638a
 
-Once completed install the Flutter and Dart plugins from Android Studio Settings => Plugins - 
+Once completed install the Flutter and Dart plugins from Android Studio Settings => Plugins: 
 
 <img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/d886b6dc-4a9d-4ee2-8b49-24d1338e4953">
 

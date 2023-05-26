@@ -12,13 +12,13 @@ https://github.com/raid8462/Security-System-App/assets/73480311/bd45a761-113d-47
 
 Once completed install the Flutter and Dart plugins from Android Studio Settings => Plugins - 
 
-<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/65d44127-60f0-4dcc-8b50-7f6bc84a3538">
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/d886b6dc-4a9d-4ee2-8b49-24d1338e4953">
 
 Following the installation of plugins the project can now be cloned as a new project from the Git Repository. Navigate to File => New => Project From Version Control - 
 
-<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/4517c1b3-8cc6-4c8f-9677-5d0878c546cb">
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/a59dc4be-2fe3-4c49-b187-ee63d817f000">
 
 When prompted copy and paste the url https://github.com/raid8462/Security-System-App.git and select the directory of where you would like to save the project.
 
-<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/9382dfcf-e1b1-48ce-aa18-97c688021c25">
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/af8ad995-1f0a-47c1-ad5e-b31f8906c1a0">
 

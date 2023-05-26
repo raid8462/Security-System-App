@@ -38,7 +38,7 @@ Once the virtual device has been installed from the toolbar select the device fr
 
 ## Using the system
 
-When the application is run the Login screen is displayed. If not registered to an account click 'Sign Up now' button to navigate to the Sign Up page.
+When the application is run the Login screen is displayed. If not registered to an account click the 'Sign Up now' button to navigate to the Sign Up page.
 
 <img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/1456b8b7-996e-4b96-8263-be9c98b36002">
 
@@ -51,5 +51,10 @@ From the Sign Up page enter a valid email and password. The password uses a stre
 The Sign Up page also uses a Captcha, prompting users to slide the missing piece of an image to authenticate. If a valid email and password is entered and the captcha is verified the sign up button is enabled.
 
 <img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/891584ed-c3ad-4612-8f5a-18454ab816c1">
+
+Once the user clicks Sign Up they are taken to the Verify Email page where an email is sent to the user to verify their email. When the user clicks on the verification link the user is navigated to the OTT page.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/fa4f4366-6044-41bf-85b2-2144768d0462">
+
 
 

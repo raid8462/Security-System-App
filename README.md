@@ -56,5 +56,7 @@ Once the user clicks Sign Up they are taken to the Verify Email page where an em
 
 <img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/fa4f4366-6044-41bf-85b2-2144768d0462">
 
+When navigated to the OTT page the user is prompted to enter the token sent to their email and click the 'Verify' button. If the token is not valid an error message is displayed. If the token is valid they are navigated to the Home page. The OTT email  can be sent again by clicking on the 'Resend OTT' button.
 
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/c553b377-d5af-4e9e-9add-d7385754f6b7">
 

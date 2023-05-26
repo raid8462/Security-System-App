@@ -22,3 +22,5 @@ When prompted copy and paste the url https://github.com/raid8462/Security-System
 
 <img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/af8ad995-1f0a-47c1-ad5e-b31f8906c1a0">
 
+To run the application on an Android device an emulator is required. This can be setup in a virtual or a physical device. The following steps show hot to install a virtual device for a Android emulator:
+From the navigation bar select Tools => Device Manager

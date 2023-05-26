@@ -18,3 +18,7 @@ Following the installation of plugins the project can now be cloned as a new pro
 
 <img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/4517c1b3-8cc6-4c8f-9677-5d0878c546cb">
 
+When prompted copy and paste the url https://github.com/raid8462/Security-System-App.git and select the directory of where you would like to save the project.
+
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/9382dfcf-e1b1-48ce-aa18-97c688021c25">
+

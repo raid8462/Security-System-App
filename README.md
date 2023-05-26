@@ -34,7 +34,12 @@ Under the virtual tab select Create device => Select a phone when 'Select Hardwa
 
 Once the virtual device has been installed from the toolbar select the device from the dropdown list and select the run button, shaped as a play button.
 
-<img width="549" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/8718fe9f-de76-46bd-9756-48e16213a4fc">
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/8718fe9f-de76-46bd-9756-48e16213a4fc">
 
 ## Using the system
+
+When the application is run the Login screen is displayed. If not registered to an account click 'Sign Up now' button to navigate to the Sign Up page.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/1456b8b7-996e-4b96-8263-be9c98b36002">
+
 

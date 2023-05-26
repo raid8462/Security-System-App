@@ -42,4 +42,14 @@ When the application is run the Login screen is displayed. If not registered to 
 
 <img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/1456b8b7-996e-4b96-8263-be9c98b36002">
 
+From the Sign Up page enter a valid email and password. The password uses a strength checker to check for a secure password. The following conditions are required for a valid password:
+- Minimum 8 characters
+- At lease one uppercase character
+- At least one number
+- At least one special character
+
+The Sign Up page also uses a Captcha, prompting users to slide the missing piece of an image to authenticate. If a valid email and password is entered and the captcha is verified the sign up button is enabled.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/891584ed-c3ad-4612-8f5a-18454ab816c1">
+
 

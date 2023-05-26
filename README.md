@@ -14,3 +14,7 @@ Once completed install the Flutter and Dart plugins from Android Studio Settings
 
 <img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/65d44127-60f0-4dcc-8b50-7f6bc84a3538">
 
+Following the installation of plugins the project can now be cloned as a new project from the Git Repository. Navigate to File => New => Project From Version Control - 
+
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/4517c1b3-8cc6-4c8f-9677-5d0878c546cb">
+

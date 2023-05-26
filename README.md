@@ -60,3 +60,7 @@ When navigated to the OTT page the user is prompted to enter the token sent to t
 
 <img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/c553b377-d5af-4e9e-9add-d7385754f6b7">
 
+The Home page is displayed to the user, with their email address and button to sign out of the application.
+
+<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/f15c8a1e-2dab-4f25-adff-2b6bf17146bd">
+

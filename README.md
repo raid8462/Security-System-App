@@ -1,6 +1,6 @@
 # Security System App
 
-## Getting Started
+## Installation guide
 
 This project is a starting point for a Flutter application.
 

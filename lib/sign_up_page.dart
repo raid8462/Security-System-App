@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:security_system/Components/custom_button.dart';
 import 'package:security_system/Components/custom_textfield.dart';
+import 'package:slider_captcha/slider_captcha.dart';
 
 class SignUpPage extends StatefulWidget {
   final VoidCallback showLoginPage;
@@ -18,6 +19,7 @@ class _SignUpPageState extends State<SignUpPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final phoneController = TextEditingController();
+  final controller = SliderController();
 
   // field for authenticating form state
   final _formField = GlobalKey<FormState>();
@@ -36,6 +38,8 @@ class _SignUpPageState extends State<SignUpPage> {
   bool isUpperCase = false;
   bool isNumber = false;
   bool isSpecial = false;
+
+  bool isCaptchaVerified = false;
 
   // regular expressions for numbers, letters and special characters
   RegExp numReg = RegExp(r".*[0-9].*");
@@ -156,35 +160,6 @@ class _SignUpPageState extends State<SignUpPage> {
         password: passwordController.text,
       );
       Navigator.pop(context);
-      final multiFactorSession =
-          await userCredential.user!.multiFactor.getSession();
-      await FirebaseAuth.instance.verifyPhoneNumber(
-          multiFactorSession: multiFactorSession,
-          phoneNumber: '0',
-          verificationCompleted: (_) {},
-          verificationFailed: (FirebaseAuthException e) {
-            if (e.code == 'invalid-phone-number') {
-              print('The provided phone number is not valid');
-            }
-          },
-          codeSent: (String verificationId, int? resendToken) async {
-            final smsCode = await getSmsCodeFromUser(context);
-
-            if (smsCode != null) {
-              final credential = PhoneAuthProvider.credential(
-                verificationId: verificationId,
-                smsCode: smsCode,
-              );
-              try {
-                await FirebaseAuth.instance.currentUser!.multiFactor
-                    .enroll(PhoneMultiFactorGenerator.getAssertion(credential));
-              } catch (e) {
-                print(e);
-              }
-            }
-          },
-          codeAutoRetrievalTimeout: (_) {});
-      Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
       Navigator.pop(context);
       // show error message
@@ -192,48 +167,6 @@ class _SignUpPageState extends State<SignUpPage> {
         showErrorMessage('An account already exists\nfor that email');
       }
     }
-  }
-
-  Future<String?> getSmsCodeFromUser(BuildContext context) async {
-    String? smsCode;
-
-    // Update the UI - wait for the user to enter the SMS code
-    await showDialog<String>(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text('SMS code:'),
-          actions: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('Sign in'),
-            ),
-            OutlinedButton(
-              onPressed: () {
-                smsCode = null;
-                Navigator.of(context).pop();
-              },
-              child: const Text('Cancel'),
-            ),
-          ],
-          content: Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              onChanged: (value) {
-                smsCode = value;
-              },
-              textAlign: TextAlign.center,
-              autofocus: true,
-            ),
-          ),
-        );
-      },
-    );
-
-    return smsCode;
   }
 
   @override
@@ -461,12 +394,44 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 10),
+                  // slider captcha
+                  Container(
+                    // if captcha is not verified captcha slider is shown
+                    child: !isCaptchaVerified
+                        ? SliderCaptcha(
+                            titleStyle: const TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            colorBar: Colors.grey.shade200,
+                            controller: controller,
+                            image: Image.asset(
+                              'lib/images/car.png',
+                              fit: BoxFit.fitWidth,
+                            ),
+                            onConfirm: (bool value) async {
+                              if (value == true) {
+                                setState(() {
+                                  isCaptchaVerified = true;
+                                });
+                              }
+                            },
+                          )
+                        // empty container is shown
+                        : Container(),
+                  ),
                   const SizedBox(height: 25),
                   // sign up button
                   CustomButton(
-                      // button only enabled if conditions are met
-                      onTap: _strength < 1 ? null : signUpWithEmail,
-                      buttonName: "Sign Up"),
+                    // button only enabled if conditions are met and captcha is verified
+                    onTap: _strength < 1
+                        ? null
+                        : !isCaptchaVerified
+                            ? null
+                            : signUpWithEmail,
+                    buttonName: "Sign Up",
+                  ),
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

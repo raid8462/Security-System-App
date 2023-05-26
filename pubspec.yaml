@@ -44,6 +44,7 @@ dependencies:
   intl_phone_field: ^3.1.0
   email_otp: ^2.0.1
   g_recaptcha_v3: ^0.0.5
+  slider_captcha: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +75,7 @@ flutter:
     - lib/images/login_image.json
     - lib/images/auth_animation.json
     - lib/images/verify-email_animation.json
+    - lib/images/car.png
     - lib/pages/index.html
 
 

@@ -43,7 +43,6 @@ class _SignUpPageState extends State<SignUpPage> {
 
   // regular expressions for numbers, letters and special characters
   RegExp numReg = RegExp(r".*[0-9].*");
-  RegExp lowercaseReg = RegExp(r".*[a-z].*");
   RegExp uppercaseReg = RegExp(r".*[A-Z].*");
   RegExp specialCharactersReg = RegExp(r'.*[!@#$%^&*(),.?":{}|<>].*');
 
@@ -394,7 +393,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 15),
                   // slider captcha
                   Container(
                     // if captcha is not verified captcha slider is shown
@@ -404,6 +403,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
                             ),
+                            colorCaptChar: Colors.white,
                             colorBar: Colors.grey.shade200,
                             controller: controller,
                             image: Image.asset(
@@ -414,11 +414,15 @@ class _SignUpPageState extends State<SignUpPage> {
                               if (value == true) {
                                 setState(() {
                                   isCaptchaVerified = true;
+                                  ScaffoldMessenger.of(context)
+                                      .showSnackBar(const SnackBar(
+                                    content: Text("Captcha verified"),
+                                  ));
                                 });
                               }
                             },
                           )
-                        // empty container is shown
+                        // if captcha is verified empty container is shown
                         : Container(),
                   ),
                   const SizedBox(height: 25),

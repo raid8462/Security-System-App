@@ -10,12 +10,7 @@ Install Android Studio to be able to use the application on an Android emulator.
 
 https://github.com/raid8462/Security-System-App/assets/73480311/bd45a761-113d-47f8-b3e2-c00848f1638a
 
+Once completed install the Flutter and Dart plugins from Android Studio Settings => Plugins - 
 
-A few resources to get you started if this is your first Flutter project:
+<img width="550" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/65d44127-60f0-4dcc-8b50-7f6bc84a3538">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

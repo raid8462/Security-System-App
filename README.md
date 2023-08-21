@@ -54,7 +54,7 @@ The Sign Up page also uses a Captcha, prompting users to slide the missing piece
 
 Once the user clicks Sign Up they are taken to the Verify Email page where an email is sent to the user to verify their email. When the user clicks on the verification link the user is navigated to the OTT page.
 
-<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/fa4f4366-6044-41bf-85b2-2144768d0462">
+<img width="300" alt="241295200-fa4f4366-6044-41bf-85b2-2144768d0462" src="https://github.com/raid8462/Security-System-App/assets/73480311/ac007377-a438-4e0a-9a0c-765d38615076">
 
 When navigated to the OTT page the user is prompted to enter the token sent to their email and click the 'Verify' button. If the token is not valid an error message is displayed. If the token is valid they are navigated to the Home page. The OTT email  can be sent again by clicking on the 'Resend OTT' button.
 
@@ -62,5 +62,5 @@ When navigated to the OTT page the user is prompted to enter the token sent to t
 
 The Home page is displayed to the user, with their email address and button to sign out of the application.
 
-<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/f15c8a1e-2dab-4f25-adff-2b6bf17146bd">
+<img width="300" alt="241296862-f15c8a1e-2dab-4f25-adff-2b6bf17146bd" src="https://github.com/raid8462/Security-System-App/assets/73480311/bb67b7eb-1892-45c1-9cae-a3fe21449a52">
 

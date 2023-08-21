@@ -50,7 +50,7 @@ From the Sign Up page enter a valid email and password. The password uses a stre
 
 The Sign Up page also uses a Captcha, prompting users to slide the missing piece of an image to authenticate. If a valid email and password is entered and the captcha is verified the sign up button is enabled.
 
-<img width="300" alt="image" src="https://github.com/raid8462/Security-System-App/assets/73480311/891584ed-c3ad-4612-8f5a-18454ab816c1">
+<img width="300" alt="241294453-891584ed-c3ad-4612-8f5a-18454ab816c1" src="https://github.com/raid8462/Security-System-App/assets/73480311/5867a1dc-a34d-4b54-814e-459d5210036e">
 
 Once the user clicks Sign Up they are taken to the Verify Email page where an email is sent to the user to verify their email. When the user clicks on the verification link the user is navigated to the OTT page.
 
